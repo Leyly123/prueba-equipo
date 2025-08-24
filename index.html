@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav-container">
-            <div>
-                <img class="logo" src="https://static.vecteezy.com/system/resources/previews/017/352/347/non_2x/illustration-of-the-logo-of-a-veterinary-clinic-vector.jpg" alt="">
+            <a href="index.html" class="logo-link">
+                <img class="logo"
+                    src="https://static.vecteezy.com/system/resources/previews/017/352/347/non_2x/illustration-of-the-logo-of-a-veterinary-clinic-vector.jpg"
+                    alt="Logo de Veterinaria">
+            </a>
+            <div class="menu" id="menu">
+                <ul class="nav-links">
+                    <li><a href="#" class="menu-link active">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html" class="menu-link">Sobre nosotros</a></li>
+                    <li>
+                        <button class="switch" id="switch">
+                            <i class="switch-light bx bx-sun"></i>
+                            <i class="switch-dark bx bx-moon"></i>
+                        </button>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <a class="enlace-activate" href="index.html">Inicio</a>
-                <a class="enlace" href="sobre-nosotros.html">Sobre nosotros</a>
-            </ul>
+            <button class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
         </nav>
     </header>
+    <div class="overlay"></div>
+
+    <main class="main">
+        <section class="section banner">
+            <div class="container-hero banner-column">
+                <img src="https://www.thedogandfriends.com/assets/img/character/img-hero01.png" alt="Ilustración de un perro" class="banner-image">
+                <div class="banner-inner">
+                    <h1 class="heading-xl">El hogar de tus mascotas</h1>
+                    <p class="paragraph">
+                        Tenemos todo lo necesario para que tu mascota sea feliz y querida. Ven a visitarnos y conoce
+                        todo lo que tenemos para ti y tu mascota.
+                    </p>
+                    <button class="btn btn-darken btn-inline">Sobre nosotros <i class="bx bx-right-arrow-alt"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js" defer></script>
 </body>
+
 </html>
