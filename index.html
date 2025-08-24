@@ -1,154 +1,210 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria </title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Veterinaria</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <div class="container">
-        <section class="features servicios">
-            <div class="content-wrapper">
-                <div class="section-header">
-                    <h2 class="gradient-text">Nuestros Servicios</h2>
-                    <p>Ofrecemos atención veterinaria integral con los más altos estándares de calidad y tecnología de vanguardia</p>
-                </div>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img class="logo"
+                    src="https://static.vecteezy.com/system/resources/previews/017/352/347/non_2x/illustration-of-the-logo-of-a-veterinary-clinic-vector.jpg"
+                    alt="Logo de Veterinaria">
+            </a>
+            <div class="menu" id="menu">
+                <ul class="nav-links">
+                    <li><a href="#" class="menu-link active">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html" class="menu-link">Sobre nosotros</a></li>
+                    <li>
+                        <button class="switch" id="switch">
+                            <i class="switch-light bx bx-sun"></i>
+                            <i class="switch-dark bx bx-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <button class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </nav>
+    </header>
+    <div class="overlay"></div>
 
-                <div class="cards-grid">
-                    <div class="feature-card servicios-card">
-                        <div class="card-content">
-                            <div class="icon-container">🩺</div>
-                            <h3>Consultas Veterinarias</h3>
-                            <p>Exámenes completos y diagnósticos precisos para mantener la salud de tu mascota.</p>
-                            <button class="card-button">Más Información</button>
-                        </div>
-                    </div>
-
-                    <div class="feature-card servicios-card">
-                        <div class="card-content">
-                            <div class="icon-container">💉</div>
-                            <h3>Vacunación y Prevención</h3>
-                            <p>Programas de vacunación completos para proteger a tu mascota de enfermedades.</p>
-                            <button class="card-button">Más Información</button>
-                        </div>
-                    </div>
-
-                    <div class="feature-card servicios-card">
-                        <div class="card-content">
-                            <div class="icon-container">🏥</div>
-                            <h3>Cirugías Especializadas</h3>
-                            <p>Procedimientos quirúrgicos especializados con tecnología avanzada.</p>
-                            <button class="card-button">Más Información</button>
-                        </div>
-                    </div>
-
-                    <div class="feature-card servicios-card">
-                        <div class="card-content">
-                            <div class="icon-container">🚨</div>
-                            <h3>Emergencias 24/7</h3>
-                            <p>Atención de urgencias las 24 horas para situaciones críticas.</p>
-                            <button class="card-button">Más Información</button>
-                        </div>
-                    </div>
-
-                    <div class="feature-card servicios-card">
-                        <div class="card-content">
-                            <div class="icon-container">✂️</div>
-                            <h3>Estética y Peluquería</h3>
-                            <p>Baños, cortes de pelo y cuidado estético para que tu mascota luzca increíble.</p>
-                            <button class="card-button">Más Información</button>
-                        </div>
-                    </div>
-
-                    <div class="feature-card servicios-card">
-                        <div class="card-content">
-                            <div class="icon-container">🔬</div>
-                            <h3>Laboratorio Clínico</h3>
-                            <p>Análisis clínicos y estudios diagnósticos con resultados rápidos.</p>
-                            <button class="card-button">Más Información</button>
-                        </div>
-                    </div>
+    <!-- ========== HERO ========== -->
+    <main class="main">
+        <section class="section banner">
+            <div class="container-hero banner-column">
+                <img src="https://www.thedogandfriends.com/assets/img/character/img-hero01.png" alt="Ilustración de un perro"
+                    class="banner-image">
+                <div class="banner-inner">
+                    <h1 class="heading-xl">El hogar de tus mascotas</h1>
+                    <p class="paragraph">
+                        Tenemos todo lo necesario para que tu mascota sea feliz y querida. Ven a visitarnos y conoce
+                        todo lo que tenemos para ti y tu mascota.
+                    </p>
+                    <button class="btn btn-darken btn-inline">
+                        Sobre nosotros <i class="bx bx-right-arrow-alt"></i>
+                    </button>
                 </div>
             </div>
         </section>
+    </main>
 
-        <section class="features productos">
-            <div class="content-wrapper">
-                <div class="section-header">
-                    <h2 class="gradient-text">Nuestros Productos</h2>
-                    <p>Encuentra todo lo que necesitas para el cuidado y bienestar de tu mascota en nuestra tienda especializada</p>
+    <!-- ========== SERVICIOS ========== -->
+    <section class="features servicios">
+        <div class="content-wrapper">
+            <div class="section-header">
+                <h2 class="gradient-text">Nuestros Servicios</h2>
+                <p>Ofrecemos atención veterinaria integral con los más altos estándares de calidad y tecnología de vanguardia</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="feature-card servicios-card">
+                    <div class="card-content">
+                        <div class="icon-container">🩺</div>
+                        <h3>Consultas Veterinarias</h3>
+                        <p>Exámenes completos y diagnósticos precisos para mantener la salud de tu mascota.</p>
+                        <button class="card-button">Más Información</button>
+                    </div>
                 </div>
 
-                <div class="cards-grid">
-                    <div class="feature-card producto-card">
-                        <div class="producto-image">
-                            <img src="images/Alimento_Premium.png" alt="Alimento Premium">
-                        </div>
-                        <div class="card-content">
-                            <h3>Alimento Premium</h3>
-                            <p>Alimentos balanceados de alta calidad para tus mascotas de todas las edades.</p>
-                            <button class="cta-button">Comprar</button>
-                        </div>
+                <div class="feature-card servicios-card">
+                    <div class="card-content">
+                        <div class="icon-container">💉</div>
+                        <h3>Vacunación y Prevención</h3>
+                        <p>Programas de vacunación completos para proteger a tu mascota de enfermedades.</p>
+                        <button class="card-button">Más Información</button>
                     </div>
+                </div>
 
-                    <div class="feature-card producto-card">
-                        <div class="producto-image">
-                            <img src="images/Juguetes_para_Mascotas.png" alt="Juguetes para Mascotas">
-                        </div>
-                        <div class="card-content">
-                            <h3>Juguetes para Mascotas</h3>
-                            <p>Gran variedad de juguetes interactivos para mantener a tu mascota activa y feliz.</p>
-                            <button class="cta-button">Comprar</button>
-                        </div>
+                <div class="feature-card servicios-card">
+                    <div class="card-content">
+                        <div class="icon-container">🏥</div>
+                        <h3>Cirugías Especializadas</h3>
+                        <p>Procedimientos quirúrgicos especializados con tecnología avanzada.</p>
+                        <button class="card-button">Más Información</button>
                     </div>
+                </div>
 
-                    <div class="feature-card producto-card">
-                        <div class="producto-image">
-                            <img src="images/Medicamentos_y_Vitaminas.png" alt="Medicamentos y Vitaminas">
-                        </div>
-                        <div class="card-content">
-                            <h3>Medicamentos y Vitaminas</h3>
-                            <p>Medicamentos veterinarios y suplementos nutricionales para la salud de tu mascota.</p>
-                            <button class="cta-button">Comprar</button>
-                        </div>
+                <div class="feature-card servicios-card">
+                    <div class="card-content">
+                        <div class="icon-container">🚨</div>
+                        <h3>Emergencias 24/7</h3>
+                        <p>Atención de urgencias las 24 horas para situaciones críticas.</p>
+                        <button class="card-button">Más Información</button>
                     </div>
+                </div>
 
-                    <div class="feature-card producto-card">
-                        <div class="producto-image">
-                            <img src="images/Productos_de_Higiene.png" alt="Productos de Higiene">
-                        </div>
-                        <div class="card-content">
-                            <h3>Productos de Higiene</h3>
-                            <p>Shampoos, cepillos y productos de aseo para mantener a tu mascota limpia y saludable.</p>
-                            <button class="cta-button">Comprar</button>
-                        </div>
+                <div class="feature-card servicios-card">
+                    <div class="card-content">
+                        <div class="icon-container">✂️</div>
+                        <h3>Estética y Peluquería</h3>
+                        <p>Baños, cortes de pelo y cuidado estético para que tu mascota luzca increíble.</p>
+                        <button class="card-button">Más Información</button>
                     </div>
+                </div>
 
-                    <div class="feature-card producto-card">
-                        <div class="producto-image">
-                            <img src="images/Collares_y_Accesorios.png" alt="Collares y Accesorios">
-                        </div>
-                        <div class="card-content">
-                            <h3>Collares y Accesorios</h3>
-                            <p>Collares, correas, arneses y accesorios elegantes y funcionales para pasear.</p>
-                            <button class="cta-button">Comprar</button>
-                        </div>
-                    </div>
-
-                    <div class="feature-card producto-card">
-                        <div class="producto-image">
-                            <img src="images/Camas_y_Transportadoras.png" alt="Camas y Transportadoras">
-                        </div>
-                        <div class="card-content">
-                            <h3>Camas y Transportadoras</h3>
-                            <p>Camas cómodas y transportadoras seguras para el descanso y viaje de tu mascota.</p>
-                            <button class="cta-button">Comprar</button>
-                        </div>
+                <div class="feature-card servicios-card">
+                    <div class="card-content">
+                        <div class="icon-container">🔬</div>
+                        <h3>Laboratorio Clínico</h3>
+                        <p>Análisis clínicos y estudios diagnósticos con resultados rápidos.</p>
+                        <button class="card-button">Más Información</button>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTOS ========== -->
+    <section class="features productos">
+        <div class="content-wrapper">
+            <div class="section-header">
+                <h2 class="gradient-text">Nuestros Productos</h2>
+                <p>Encuentra todo lo que necesitas para el cuidado y bienestar de tu mascota en nuestra tienda especializada</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="feature-card producto-card">
+                    <div class="producto-image">
+                        <img src="images/Alimento_Premium.png" alt="Alimento Premium">
+                    </div>
+                    <div class="card-content">
+                        <h3>Alimento Premium</h3>
+                        <p>Alimentos balanceados de alta calidad para tus mascotas de todas las edades.</p>
+                        <button class="cta-button">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="feature-card producto-card">
+                    <div class="producto-image">
+                        <img src="images/Juguetes_para_Mascotas.png" alt="Juguetes para Mascotas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Juguetes para Mascotas</h3>
+                        <p>Gran variedad de juguetes interactivos para mantener a tu mascota activa y feliz.</p>
+                        <button class="cta-button">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="feature-card producto-card">
+                    <div class="producto-image">
+                        <img src="images/Medicamentos_y_Vitaminas.png" alt="Medicamentos y Vitaminas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Medicamentos y Vitaminas</h3>
+                        <p>Medicamentos veterinarios y suplementos nutricionales para la salud de tu mascota.</p>
+                        <button class="cta-button">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="feature-card producto-card">
+                    <div class="producto-image">
+                        <img src="images/Productos_de_Higiene.png" alt="Productos de Higiene">
+                    </div>
+                    <div class="card-content">
+                        <h3>Productos de Higiene</h3>
+                        <p>Shampoos, cepillos y productos de aseo para mantener a tu mascota limpia y saludable.</p>
+                        <button class="cta-button">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="feature-card producto-card">
+                    <div class="producto-image">
+                        <img src="images/Collares_y_Accesorios.png" alt="Collares y Accesorios">
+                    </div>
+                    <div class="card-content">
+                        <h3>Collares y Accesorios</h3>
+                        <p>Collares, correas, arneses y accesorios elegantes y funcionales para pasear.</p>
+                        <button class="cta-button">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="feature-card producto-card">
+                    <div class="producto-image">
+                        <img src="images/Camas_y_Transportadoras.png" alt="Camas y Transportadoras">
+                    </div>
+                    <div class="card-content">
+                        <h3>Camas y Transportadoras</h3>
+                        <p>Camas cómodas y transportadoras seguras para el descanso y viaje de tu mascota.</p>
+                        <button class="cta-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js" defer></script>
 </body>
+
 </html>
