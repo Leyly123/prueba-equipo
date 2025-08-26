@@ -7,3 +7,7 @@
   background: radial-gradient(circle at 30% 30%, rgba(91,155,213,.15), rgba(27,75,102,.08));
   padding: 6px; 
 }
+
+.info-grid {
+  display: flex;
+}
