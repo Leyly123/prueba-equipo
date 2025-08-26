@@ -1,0 +1,9 @@
+
+.equipo-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: radial-gradient(circle at 30% 30%, rgba(91,155,213,.15), rgba(27,75,102,.08));
+  padding: 6px; 
+}
