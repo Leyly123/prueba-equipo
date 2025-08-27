@@ -275,7 +275,7 @@ body.darkmode {
 .feature-card:hover {
   transform: translateY(-15px) scale(1.02);
   box-shadow: 0 25px 50px rgba(27, 75, 102, 0.2);
-  border-color: var(--accent);
+  border-color: var(#e8b86d);
 }
 
 .darkmode .feature-card:hover {
@@ -537,25 +537,12 @@ body.darkmode {
 }
 
 
-
-
 /* Footer */
-
-/* 🎨 Variables de color */
-:root {
-  --primary: #0d47a1;   /* Azul oscuro */
-  --secondary: #1976d2; /* Azul intermedio (navbar y footer) */
-  --accent: #ffb300;    /* Amarillo */
-  --white: #ffffff;
-  --gray: #e0e0e0;
-}
-
-/* Footer general */
 .footer {
-  background: var(--secondary);
+  background: var(--primary);
   color: var(--white);
   padding: 3rem 1.5rem 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "DM Sans", sans-serif;
   margin-top: 3rem;
   font-size: 1.1rem;
 }
@@ -563,7 +550,7 @@ body.darkmode {
 /* Contenedor de columnas */
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 5 columnas adaptables */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 2rem;
   max-width: 1300px;
   margin: 0 auto;
@@ -578,7 +565,7 @@ body.darkmode {
 }
 
 .footer-column p {
-  color: var(--gray);
+  color: var(--white);
   line-height: 1.8;
   font-size: 1.1rem;
 }
@@ -653,4 +640,20 @@ body.darkmode {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+.darkmode .footer {
+  background: #2c3e50;
+  color: #bdc3c7;
+}
+
+.darkmode .footer-column p,
+.darkmode .footer-column a {
+  color: #bdc3c7;
+}
+
+.darkmode .social-links a:hover,
+.darkmode .footer-column a:hover {
+  color: var(--accent);
 }
